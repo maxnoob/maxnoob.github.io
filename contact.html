@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"> <!--links to bootstrap-->
+        <link href="styles.css" rel="stylesheet"> <!--links to own stylesheet-->
+        <title>MaxMcEvan - Contact</title>
+        <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    </head>
+    <body class="cent">
+        <!-- Header adapted from "cover" a bootstrap template -->
+         <header class="mb-auto">
+                <div class="inner navbar" id='navbar'>
+              <h3 class="masthead-brand">MaxMcEvan</h3>
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Theme
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#" id="dark">Dark theme</a>
+                        <a class="dropdown-item" href="#" id="light">Light theme</a>
+                        <a class="dropdown-item" href="http://www.youtube.com/channel/UCJlPEYjlylp1vkluw0pVEeA">Youtube theme</a>
+                    </div>
+                </div>
+              <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="gallery.html">Gallery</a>
+                <a class="nav-link" href="experiments.html">Webdesign/-programming Experiments</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </nav>
+            </div>
+         </header>
+        <h2 class="page-header">
+            Contact
+        </h2>
+
+        <div class="col py-4 px-lg-5 bg-transparent">
+            Want to give feedback or get in touch? Fill out the form below.
+        </div>
+
+<!-- Form here -->
+
+        <div class="container px-lg-5">
+            <!-- https://getbootstrap.com/docs/4.0/components/forms/-->
+            <form onsubmit="return false">    <!-- return false, so that the page doesn't reload -->
+              <div class="form-group">
+                <label for="FormTextarea1">Please type your message in the field below (form does not work yet!)</label>
+                <textarea class="form-control" id="FormTextarea1" rows="9" placeholder="Looking forward to your message!"></textarea>
+              </div>
+             <div class="form-group">
+                <label for="FormEmailInput1">Email address</label>
+                <input type="email" class="form-control" id="FormEmailInput1" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="FormSelect1">Contact reason</label>
+                <select class="form-control" id="FormSelect1">
+                  <option>Casual matter</option>
+                  <option>Business inquiry</option>
+                  <option>Bug reporting</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-secondary btn-margin" onlick="sendcontactmessage();">Submit message</button>
+                      <script src=scripts.js> </script>
+            </form>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>

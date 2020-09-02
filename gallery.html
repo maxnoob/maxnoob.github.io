@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"> <!--links to bootstrap-->
+        <link href="styles.css" rel="stylesheet"> <!--links to own stylesheet-->
+        <title>MaxMcEvan - Gallery</title>
+        <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    </head>
+    <body class="cent">
+    <!-- Header adapted from "cover" a bootstrap template -->
+         <header class="mb-auto">
+                <div class="inner navbar" id='navbar'>
+              <h3 class="masthead-brand">MaxMcEvan</h3>
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Theme
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#" id="dark">Dark theme</a>
+                        <a class="dropdown-item" href="#" id="light">Light theme</a>
+                        <a class="dropdown-item" href="http://www.youtube.com/channel/UCJlPEYjlylp1vkluw0pVEeA">Youtube theme</a>
+                    </div>
+                </div>
+              <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="gallery.html">Gallery</a>
+                <a class="nav-link" href="experiments.html">Webdesign/-programming Experiments</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+              </nav>
+            </div>
+         </header>
+        <h2 class="page-header">
+            Gallery
+        </h2>
+        <div class="col py-4 px-lg-5 bg-transparent">
+            Here's a gallery of some of my projects.
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg">
+                  <h5>My most viewed video</h5>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" class="video embed-responsive-item" src="https://www.youtube.com/embed/JwA7sST5EoQ?modestbranding=1&enablejsapi=1" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-lg">
+                  <h5>The video I'm most proud of</h5>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" class="video embed-responsive-item" width="110%" height="auto" src="https://www.youtube.com/embed/_GYeYgscVOE" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-lg">
+                  <h5>My most recent video</h5>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" class="video embed-responsive-item" src="https://www.youtube.com/embed/?list=PL7FmrIKdcxotlk-Uiks53MV1HRyfLpSYq" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <!--<div class="col-lg">
+                  <h5>The video I'm most proud of</h5>
+                      <!-- 1. The <iframe> (and video player) will replace this <div> tag. 
+                      <div id="player"></div>
+
+                      <script>
+                        // 2. This code loads the IFrame Player API code asynchronously.
+                        var tag = document.createElement('script');
+
+                        tag.src = "https://www.youtube.com/iframe_api";
+                        var firstScriptTag = document.getElementsByTagName('script')[0];
+                        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                        // 3. This function creates an <iframe> (and YouTube player)
+                        //    after the API code downloads.
+                        var player;
+                        function onYouTubeIframeAPIReady() {
+                          player = new YT.Player('player', {
+                            height: '315',
+                            width: '560',
+                            videoId: '_GYeYgscVOE',
+                            events: {
+                              'onReady': onPlayerReady,
+                              'onStateChange': onPlayerStateChange
+                            }
+                          });
+                        }
+
+                        // 4. The API will call this function when the video player is ready.
+                        function onPlayerReady(event) {
+                          event.target.pauseVideo();
+                        }
+
+                        // 5. The API calls this function when the player's state changes.
+                        //    The function indicates that when playing a video (state=1),
+                        //    the player should play for six seconds and then stop.
+                        var done = false;
+                        function onPlayerStateChange(event) {
+                          if (event.data == YT.PlayerState.PLAYING) {
+                            document.querySelector('body').style.backgroundColor = 'black';
+                          }
+                        }
+                        function stopVideo() {
+                          player.stopVideo();
+                        } 
+                      </script> -->
+                </div>
+             </div>
+        </div>
+
+        <script src="scripts.js"></script>
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
+
