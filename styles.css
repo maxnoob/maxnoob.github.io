@@ -30,11 +30,6 @@ body
   box-shadow: 3rem 3rem 3rem 0px rgba(0, 0, 0, 0.3);
 }
 
-#nav_signature:hover
-{
-  background-color: black;
-}
-
 .masthead-brand
 {
   margin-bottom: 0;
@@ -157,7 +152,9 @@ body
 
 #signature
 {
-  width: 50vw;
+
+  width:50vw;
+  max-width:700px;
   height: auto;
   position: relative;
   z-index: 1; /* brings it to front */
@@ -172,12 +169,25 @@ body
   height: 100%;
 }
 
+#transition
+{
+  position: absolute;
+  z-index: 100;
+  height: 100%;
+  display: none;
+}
+
+
 .tile
 {
   width: 4.8vw;
   height: 100%;
-  overflow: scroll;
   float: left;
+}
+
+footer
+{
+  padding-top: 8rem;
 }
 
 .a { background: #02204d; }
@@ -233,4 +243,81 @@ body
 {
   text-align: center;
   position: center;
+}
+
+#accordion
+{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+
+.iframe-box
+{
+  float: center;
+  width: 33%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 2200px) {
+  .iframe-box {
+    width: 50%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .iframe-box {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.red
+{
+  color: red;
+}
+
+
+/* sphere animation from anime.js */
+.animation-wrapper {
+  width: 50%;
+  padding-bottom: 50%;
+}
+
+.sphere-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 580px;
+  height: 580px;
+  margin: -290px 0 0 -260px;
+}
+
+.sphere path {
+  fill: url(#sphereGradient);
+  stroke-width: 1px;
+  stroke: rgba(80,80,80,.35);
+  backface-visibility: hidden;
+}
+
+@media (min-width: 500px) {
+  .sphere path {
+    stroke-width: .4px;
+  }
+}
+
+.animebody
+{
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+
 }

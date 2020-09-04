@@ -12,29 +12,69 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     </head>
     <body class="cent">
-    <!-- Header adapted from "cover" a bootstrap template -->
-         <header class="mb-auto">
-                <div class="inner navbar" id='navbar'>
-              <h3 class="masthead-brand">MaxMcEvan</h3>
-                <div class="dropdown show">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Theme
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#" id="dark">Dark theme</a>
-                        <a class="dropdown-item" href="#" id="light">Light theme</a>
-                        <a class="dropdown-item" href="http://www.youtube.com/channel/UCJlPEYjlylp1vkluw0pVEeA">Youtube theme</a>
-                    </div>
+      <div id="animated-background">
+        <div class="tile a"></div>
+        <div class="tile b"></div>
+        <div class="tile c"></div>
+        <div class="tile d"></div>
+        <div class="tile e"></div>
+        <div class="tile f"></div>
+        <div class="tile g"></div>
+        <div class="tile h"></div>
+        <div class="tile i"></div>
+        <div class="tile j"></div>
+        <div class="tile k"></div>
+        <div class="tile l"></div>
+        <div class="tile m"></div>
+        <div class="tile n"></div>
+        <div class="tile o"></div>
+        <div class="tile p"></div>
+        <div class="tile q"></div>
+        <div class="tile r"></div>
+        <div class="tile s"></div>
+        <div class="tile t"></div>
+    </div>
+          <!-- Header adapted from "cover" a bootstrap template -->
+          <header class="mb-auto">
+            <div class="inner navbar" id='navbar'>
+                <img id="nav_signature" src="media/sign.png" alt="signature" style="width:auto;height:2.5rem">
+
+            <nav class="navbar navbar-expand-lg nav-masthead">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experiments.html">Webdesign/-programming Experiments</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              Theme
+                            </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#" id="green">Green theme</a>
+                                <a class="dropdown-item" href="http://www.youtube.com/channel/UCJlPEYjlylp1vkluw0pVEeA" target="_blank">Youtube theme</a>
+                            </div>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-              <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link active" href="gallery.html">Gallery</a>
-                <a class="nav-link" href="experiments.html">Webdesign/-programming Experiments</a>
-                <a class="nav-link" href="about.html">About</a>
-                <a class="nav-link" href="contact.html">Contact</a>
               </nav>
             </div>
-         </header>
+     </header>
         <h2 class="page-header">
             Gallery
         </h2>
@@ -44,74 +84,44 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg">
+                <div class="col-xl iframe-box">
                   <h5>My most viewed video</h5>
                   <div class="embed-responsive embed-responsive-16by9">
                     <iframe width="560" height="315" class="video embed-responsive-item" src="https://www.youtube.com/embed/JwA7sST5EoQ?modestbranding=1&enablejsapi=1" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </div>
-                <div class="col-lg">
+                <div class="col-xl iframe-box">
                   <h5>The video I'm most proud of</h5>
                   <div class="embed-responsive embed-responsive-16by9">
                     <iframe width="560" height="315" class="video embed-responsive-item" width="110%" height="auto" src="https://www.youtube.com/embed/_GYeYgscVOE" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </div>
-                <div class="col-lg">
+                <div class="col-xl iframe-box">
                   <h5>My most recent video</h5>
                   <div class="embed-responsive embed-responsive-16by9">
                     <iframe width="560" height="315" class="video embed-responsive-item" src="https://www.youtube.com/embed/?list=PL7FmrIKdcxotlk-Uiks53MV1HRyfLpSYq" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </div>
-                <!--<div class="col-lg">
-                  <h5>The video I'm most proud of</h5>
-                      <!-- 1. The <iframe> (and video player) will replace this <div> tag. 
-                      <div id="player"></div>
-
-                      <script>
-                        // 2. This code loads the IFrame Player API code asynchronously.
-                        var tag = document.createElement('script');
-
-                        tag.src = "https://www.youtube.com/iframe_api";
-                        var firstScriptTag = document.getElementsByTagName('script')[0];
-                        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-                        // 3. This function creates an <iframe> (and YouTube player)
-                        //    after the API code downloads.
-                        var player;
-                        function onYouTubeIframeAPIReady() {
-                          player = new YT.Player('player', {
-                            height: '315',
-                            width: '560',
-                            videoId: '_GYeYgscVOE',
-                            events: {
-                              'onReady': onPlayerReady,
-                              'onStateChange': onPlayerStateChange
-                            }
-                          });
-                        }
-
-                        // 4. The API will call this function when the video player is ready.
-                        function onPlayerReady(event) {
-                          event.target.pauseVideo();
-                        }
-
-                        // 5. The API calls this function when the player's state changes.
-                        //    The function indicates that when playing a video (state=1),
-                        //    the player should play for six seconds and then stop.
-                        var done = false;
-                        function onPlayerStateChange(event) {
-                          if (event.data == YT.PlayerState.PLAYING) {
-                            document.querySelector('body').style.backgroundColor = 'black';
-                          }
-                        }
-                        function stopVideo() {
-                          player.stopVideo();
-                        } 
-                      </script> -->
                 </div>
              </div>
         </div>
-
+        <footer class="cent">
+          <br>
+          Animations of this website were made with anime.js (MIT-Licence) <br>
+          Copyright© McMcEvan 2020
+        </footer>
+        <script src=anime-master/lib/anime.min.js></script>
+        <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
+          <script>
+          const backgroundAnimationExitTransition = anime({
+                  targets: ".tile2",
+                  translateX: [20, 0],
+                  opacity: [0, 1],
+                  delay: function(el, i, l) {return i * 100},
+                  duration: 400,
+                  easing: "easeOutCubic",
+          });
+        </script>
         <script src="scripts.js"></script>
         <script src="https://apis.google.com/js/api.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -60,9 +60,8 @@
                                   Theme
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#" id="dark">Dark theme</a>
-                                    <a class="dropdown-item" href="#" id="light">Light theme</a>
-                                    <a class="dropdown-item" href="http://www.youtube.com/channel/UCJlPEYjlylp1vkluw0pVEeA">Youtube theme</a>
+                                    <a class="dropdown-item" href="#" id="green">Green theme</a>
+                                    <a class="dropdown-item" href="http://www.youtube.com/channel/UCJlPEYjlylp1vkluw0pVEeA" target="_blank">Youtube theme</a>
                                 </div>
                               </li>
                             <li class="nav-item">
@@ -126,9 +125,31 @@
                     <p>  Cheerio, <br> Max</p>
                 </div>
              </div>
+
+             <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed playfair-black" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Easter eggs on this page</button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body playfair-black">
+                      <ul>If you click on the round picture on the middle of the page, then the background will disappear.</ul>
+                      <ul>If you click on the signature in the middle of the page, it will get unwritten.</ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <a class="btn-secondary btn btn-margin cent" href="http://www.youtube.com/channel/UCJlPEYjlylp1vkluw0pVEeA?sub_confirmation=1">Subscribe to my YouTube channel</a>
+
         </div>
 
-        <a class="btn-secondary btn btn-margin cent" href="http://www.youtube.com/channel/UCJlPEYjlylp1vkluw0pVEeA?sub_confirmation=1">Subscribe to my YouTube channel</a>
+
+
+        
         <br>
         <footer class="cent">
             <br>
@@ -137,35 +158,6 @@
         </footer>
         <script src=anime-master/lib/anime.js></script>
         <script>
-            /* draws signature on top of page with paths set in the html-file. */
-            var signatureDrawing = anime({
-                targets: '#signature .lines path',
-                strokeDashoffset: [anime.setDashoffset, 0],
-                easing: 'easeInOutSine',
-                duration: 3000,
-            });
-            /* click the area of the signature to reverse the effect */
-            document.querySelector('#signature').onclick = function() {
-                signatureDrawing.reverse() /* changes the direction of the animation, but without actually playing it. so it changes the STATE */
-                signatureDrawing.play()
-            }
-            const backgroundAnimation = anime({
-                targets: ".tile",
-                translateX: [-20, 0],
-                opacity: [0, 1],
-                delay: function(el, i, l) {
-                return i * 100
-                },
-                duration: 400,
-                easing: "easeOutCubic"
-            })
-
-            document.querySelector('.image-cropper').onclick = function() {
-                backgroundAnimation.reverse() /* changes the direction of the animation, but without actually playing it. so it changes the STATE */
-                backgroundAnimation.play()
-            }
-
-
 
             /* profile picture decreases size responsive */
             function myFunction(x) {
