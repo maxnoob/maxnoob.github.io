@@ -45,15 +45,21 @@ const backgroundAnimation = anime({
   duration: 3000,
 });
 /* click the area of the signature to reverse the effect */
-document.querySelector('#signature').onclick = function() {
-  signatureDrawing.reverse() /* changes the direction of the animation, but without actually playing it. so it changes the STATE */
-  signatureDrawing.play()
+var signature = document.querySelector('#signature');
+if (signature) {
+  signature.onclick = function() {
+    signatureDrawing.reverse() /* changes the direction of the animation, but without actually playing it. so it changes the STATE */
+    signatureDrawing.play()
+  }
 }
 
-
-document.querySelector('.image-cropper').onclick = function() {
+/* save the "document.querySelector" in a var, to check if the element even exists on the current page. Otherwise there's an error, and the script will stop running! */
+var profimg = document.querySelector('.image-cropper');
+if (profimg) {
+  profimg.onclick = function() {
   backgroundAnimation.reverse() /* changes the direction of the animation, but without actually playing it. so it changes the STATE */
   backgroundAnimation.play()
+  }
 }
 
 

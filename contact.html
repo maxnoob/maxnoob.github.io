@@ -92,6 +92,7 @@
   var mylist = document.getElementById("Select1");
   var selection = mylist.options[mylist.selectedIndex].text;
   console.log('Contact reason: ' + selection)
+  row = []; /* clear row, so every submission starts with empty values and only gets filled onclick */
   row += selection + ',';
   }
 
@@ -187,8 +188,8 @@
 
   function sendForm()
   {
+    console.log(row);
     /*fields.selection = getSelection();*/
-    console.log('got the selection')
 
     /*if (isValid())
     {
@@ -217,7 +218,7 @@
               </div>
 
               <div class="form-group">
-                <label for="Text1">Please type your message in the field below (form does not work on Github Pages!)</label>
+                <label for="Text1">Please type your message in the field below</label>
                 <textarea type="text" class="form-control" id="Text1" rows="9" placeholder="Looking forward to your message!"></textarea>
               </div>
              
@@ -233,7 +234,7 @@
 
               <input type="checkbox" id="newsletterBox" /> I want to stay up to date with the newsletter <br>
               
-              <input type="button" onclick="selectFunction(); textArea(); getName(); getEmail(); getNewsletter(); sendForm(); console.log('button pressed')" class="btn btn-secondary btn-margin" value="Send message"/>
+              <input type="button" onclick="console.log('button pressed'); selectFunction(); getName(); getEmail(); getNewsletter(); textArea(); sendForm()" class="btn btn-secondary btn-margin" value="Send message"/>
 
               
             </form>
