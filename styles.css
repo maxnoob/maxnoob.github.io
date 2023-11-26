@@ -3,10 +3,22 @@ html {
 }
 
 body {
-  background-color: rgb(83, 112, 155); /* greyish background */
+  background-color: var(--color-blue-harvard); /* rgb(83, 112, 155); greyish background */
   text-align: justify;
   height: 100%;
-  color:black
+  color:black;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.cstm_title {
+font-family: 'Courier New', Courier, monospace;
+font-weight: 700;
+}
+
+.card-text{
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .card_label {
@@ -148,4 +160,8 @@ footer {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+
+:root{
+  --color-blue-harvard: #242d48;
 }
