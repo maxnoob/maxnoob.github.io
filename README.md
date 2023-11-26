@@ -1,16 +1,3 @@
 # maxnoob.github.io
-## a stylish website as final project for the CS50 course at HarvardX
+## This is a landing page for various of my projects
 
-This is, as of now, just a test page for the final project of the CS50 (computer science 50) class, that I'm taking at HarvardX. It's a introductory course about computer science, which is taken by thousands of people (about 800 students on campus and the rest online from all over the world.
-
-The aim of this website is to test and implement mostly design functions in HTML, CSS and JavaScript to create a visually compelling website. As I edit videos in my free time as a hobby for my YouTube channel, I thought I could make this a platform for people to see just a bit more of my persona besides the YouTube channel page.
-
-Since I'm trying out a lot of things, JS-libraries etc, it takes quite a while for me to learn what is possible to achieve on this website in a realistic timeframe.
-
-What I tried and what I implemented:
-- ```anime.js``` (implemented): Very fast and simple animation libary for JavaScript. All the animation on the website are made with anime.js. Especially if you use if with vector graphics (svg), it seems very powerful. The animated signature on the index page is also a handdrawn svg where I used my logo as a template.
-- ```barba.js``` (tried): Is used for site transitions. I tried to take the animated background, that I made and use it as a transition overlay when you want to visit another page. Unfortunately I could not get my custion transition to work and the documentation didn't explain enough for me. Maybe a template transition with barba.js in the future, but custom transitions seem to be very difficult to realise.
-- ```Custom YouTube player``` (tried): The videos, that are now in the gallery are just embedded with an ordinary iframe, that is provided by YouTube (when you click on "share" next to a video on YouTube). There is the possibility of using the YouTube API, but it seems you then can only use the created javascript functions on one video per page. If you want to have multiple videos per page, as I want to as a gallery, it seems rather difficult to realise (at least I couldn't figure it out).
-- ```Contact form``` (implemented, but not working on github pages): I wanted to create a contact for just for all sorts of messages, that the visitor may want to send to me. Unfortunately I had to learn, that on static pages (as is github pages) you can't build a database or the like. I wrote the code for taking the fields and putting them into an array, so on submit the messages could be easily written into a csv-file. To write to a csv-file in javascript you would need something like node.js which has a csv-writer function, that can append to an existing csv-file in your directory. But node.js has to be installed server-side. So not possible on github pages. For the actual realisation for this website with such a form I will look into php and then store the information in an SQL database, which seems to be the simplest and most secure way (more secure than a csv-file).
-
-If you have any suggestions for this website, may it be the content, the coding or the aesthetics, please don't hesitate to contact me via the contact form or in YouTube comments. Hopefully this will soon turn out in a real website, ready for the public.
