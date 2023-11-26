@@ -1,73 +1,15 @@
-
-html
-{
-  height:100%;
+html {
+  height: 100%;
 }
 
-body
-{
-    background-color: rgb(83, 112, 155); /* greyish background */
-    color: #fff; /* white font */
-    text-align: justify;
-    height: 100%;
+body {
+  background-color: rgb(83, 112, 155); /* greyish background */
+  color: #fff; /* white font */
+  text-align: justify;
+  height: 100%;
 }
 
-/*
- * Header  adapted from "cover" a bootstrap template
- */
-.masthead
-{
-  padding: 0.2rem 2rem 2rem 1rem; /* top, right, bottom, left */
-}
-
-.navbar
-{
-  background-color: rgb(105, 137, 185);
-}
-
-#navbar
-{
-  box-shadow: 3rem 3rem 3rem 0px rgba(0, 0, 0, 0.3);
-}
-
-.masthead-brand
-{
-  margin-bottom: 0;
-  margin-top: 0.2rem;
-  float: center;
-}
-
-.nav-masthead .nav-link
-{
-  padding: 0.25rem 0;
-  font-weight: 700;
-  color: rgba(255, 255, 255, .5);
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
-}
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus
-{
-  border-bottom-color: rgba(199, 209, 223, 0.3); /* 0.3 is transparency of color of line beneath hovered over link */
-  color: rgba(255, 255, 255, .9);
-  transform: translate(-0, -0.3rem);
-  transition: text-color 1s linear, border-bottom-color 0.5s linear, transform 0.2s ease-out
-}
-
-.nav-masthead .nav-link + .nav-link
-{                                    /* space between nav-links */
-  margin-left: 2rem;
-}
-
-.nav-masthead .active
-{
-  color: rgb(255, 255, 255);    /* font color of active tab */
-  border-bottom-color: rgb(131, 155, 192); /* color of line beneath active link */
-}
-
-@media (min-width: 1000px)
-{
+@media (min-width: 1000px) {
   .masthead-brand {
     float: left;
   }
@@ -81,61 +23,33 @@ body
 }
 
 .navbar-toggler {
-  background: rgb(83, 113, 158); 
+  background: rgb(83, 113, 158);
 }
 
-.page-header
-{
-    padding-top: 3rem;
+.page-header {
+  padding-top: 3rem;
 }
-
-/*.socialmedia
-{
-  height: 20rem;
-  width: 45rem;
-  background-color: transparent;
-  transform:translate(-25rem)rotate(-30deg);
-  position: absolute;
-}
-.socialmedia:hover
-{
-  background-color: rgba(131, 155, 192, 0.8);
-  transition: background-color 1s linear;
-}*/
 
 /* crops square picture to circle. adapted from: https://medium.com/@biancapower/how-to-make-a-rectangle-image-a-circle-in-css-2f392bc9abd3*/
-.image-cropper
-{
-    width: 15rem;
-    height: 15rem;
-    position: relative;
-    left: -2%;
-    overflow: hidden;    /* overflow & border-radius is the actual cropping */
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    opacity: 0%;
+.image-cropper {
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+  left: -2%;
+  overflow: hidden; /* overflow & border-radius is the actual cropping */
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  opacity: 0%;
 }
-.profile-pic
-{
+.profile-pic {
   display: block;
   margin: auto;
   height: 100%;
   width: auto;
 }
 
-.signature-distancer
-{
-  margin-top: -6rem;
-}
-
-.btn-margin
-{
-  margin: 1rem;
-}
-
-.formfield-margin
-{
+.btn-margin {
   margin: 1rem;
 }
 
@@ -146,115 +60,53 @@ body
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
-  border: .05rem solid #fff;
+  border: 0.05rem solid #fff;
 }
 
-
-#signature
-{
-
-  width:50vw;
-  max-width:700px;
-  height: auto;
-  position: relative;
-  z-index: 1; /* brings it to front */
-  left: 50%;
-  transform: translate(-50%, -4.5rem);
-}
-
-#animated-background
-{
-  position: fixed;
-  z-index: -100;
-  height: 100%;
-}
-
-#transition
-{
-  position: absolute;
-  z-index: 100;
-  height: 100%;
-  display: none;
-}
-
-
-.tile
-{
+.tile {
   width: 4.8vw;
   height: 100%;
   float: left;
 }
 
-footer
-{
+footer {
   padding-top: 8rem;
 }
 
-.a { background: #02204d; }
-.b { background: #072655; }
-.c { background: #072c64; }
-.d { background: #0b2f64; }
-.e { background: #103266; }
-.f { background: #12356b; }
-.g { background: #16396e; }
-.h { background: #193c70; }
-.i { background: #1d4177; }
-.j { background: #204377; }
-.k { background: #24487c; }
-.l { background: #284d81; }
-.m { background: #2b5083; }
-.n { background: #2f5386; }
-.o { background: #33578a; }
-.p { background: rgb(52, 88, 139); }
-.q { background: rgb(57, 92, 143); }
-.r { background: rgb(61, 94, 143); }
-.s { background: rgb(69, 100, 148); }
-.t { background: rgb(72, 102, 148); }
-
-
-
-.video{
+.video {
   box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.3);
-  text-align:center;
+  text-align: center;
 }
 
-.playfair-bold
-{
+.playfair-bold {
   font-family: "Playfair Display";
   font-weight: bold;
-  color: rgba(255, 255, 255, .9)
+  color: rgba(255, 255, 255, 0.9);
 }
 
-.playfair
-{
+.playfair {
   font-family: "Playfair Display";
-  color: rgba(255, 255, 255, .9);
+  color: rgba(255, 255, 255, 0.9);
   text-align: justify;
 }
 
-.playfair-black
-{
+.playfair-black {
   font-family: "Playfair Display";
   color: rgba(2, 2, 2, 0.9);
   text-align: justify;
 }
 
-.cent
-{
+.cent {
   text-align: center;
   position: center;
 }
 
-#accordion
-{
+#accordion {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-
-
-.iframe-box
-{
+.iframe-box {
   float: center;
   width: 33%;
   padding-left: 5rem;
@@ -277,47 +129,4 @@ footer
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
-
-.red
-{
-  color: red;
-}
-
-
-/* sphere animation from anime.js */
-.animation-wrapper {
-  width: 50%;
-  padding-bottom: 50%;
-}
-
-.sphere-animation {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 580px;
-  height: 580px;
-  margin: -290px 0 0 -260px;
-}
-
-.sphere path {
-  fill: url(#sphereGradient);
-  stroke-width: 1px;
-  stroke: rgba(80,80,80,.35);
-  backface-visibility: hidden;
-}
-
-@media (min-width: 500px) {
-  .sphere path {
-    stroke-width: .4px;
-  }
-}
-
-.animebody
-{
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-
 }
