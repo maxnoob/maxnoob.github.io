@@ -6,6 +6,7 @@ body {
   background-color: rgb(83, 112, 155); /* greyish background */
   text-align: justify;
   height: 100%;
+  color:black
 }
 
 .card_label {
